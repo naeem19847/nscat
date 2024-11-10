@@ -57,6 +57,29 @@ function App() {
         </div>
       </nav>
 
+      <div className="bg-indigo-700 text-white">
+        <div className="max-w-7xl mx-auto py-8 px-4">
+          <h1 className="text-3xl font-bold mb-2">Network Security Configuration Audit Tool</h1>
+          <p className="text-indigo-100 text-lg">
+            An AI-based Tool to conduct realtime audit of security configurations of Network Devices
+          </p>
+          <div className="mt-4 flex gap-4">
+            <div className="bg-indigo-800 rounded-lg p-4 flex-1">
+              <div className="text-2xl font-bold mb-1">Real-time Monitoring</div>
+              <p className="text-indigo-200">Continuous security assessment of network devices</p>
+            </div>
+            <div className="bg-indigo-800 rounded-lg p-4 flex-1">
+              <div className="text-2xl font-bold mb-1">AI-Powered Analysis</div>
+              <p className="text-indigo-200">Intelligent security configuration auditing</p>
+            </div>
+            <div className="bg-indigo-800 rounded-lg p-4 flex-1">
+              <div className="text-2xl font-bold mb-1">Comprehensive Reports</div>
+              <p className="text-indigo-200">Detailed security compliance insights</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <main>
         {activeTab === 'dashboard' && <Dashboard />}
         {activeTab === 'auditing' && <Auditing />}
