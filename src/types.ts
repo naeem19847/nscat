@@ -36,3 +36,19 @@ export interface AuditFinding {
   description: string;
   recommendation: string;
 }
+
+export interface AuditConfig {
+  id: string;
+  name: string;
+  deviceType: DeviceType;
+  rules: AuditRule[];
+}
+
+export interface AuditRule {
+  id: string;
+  category: string;
+  check: string;
+  severity: 'critical' | 'high' | 'medium' | 'low';
+  expectedValue: string;
+  weight: number;
+}</content>
